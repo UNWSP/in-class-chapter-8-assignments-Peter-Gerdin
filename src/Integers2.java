@@ -10,5 +10,9 @@ public class Integers2 {
         for(double x: array){
             System.out.println(x);
         }
+
+        for(int sub = (array.length-1); sub > -1; --sub) {
+            System.out.println(array[sub]);
+        }
     }
 }
