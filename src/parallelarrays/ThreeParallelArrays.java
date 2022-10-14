@@ -22,8 +22,17 @@ public class ThreeParallelArrays {
 				if (state.toUpperCase().equals(input.toUpperCase())){
 					String abr = (String) Array.get(statesAbbreviation, index);
 					String cap = (String) Array.get(capitals, index);
-					System.out.print(state + "\t\t" + abr + "\t\t" + cap + "\n\n");
+					System.out.print(state + "\t\t" + abr + "\t\t" + cap + "\n");
 					Tfvar2 = true;
+
+					System.out.print("Enter a zip code for this state >> ");
+					String input2 =inputDevice.nextLine();
+
+					cap = cap + " - " + input2;
+
+					Array.set(capitals, index, cap);
+					System.out.print(cap + "\n\n");
+
 				}
 				index++;
 			}
